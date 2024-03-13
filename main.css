@@ -1,0 +1,330 @@
+body {
+	background-color: #333333;
+	margin-left: 1.5em;
+	margin-top: 1.5em;
+}
+
+.main-menu {
+	display: flex;
+	
+}
+										/*Logo*/
+.im {
+	margin-top: .5em;
+	margin-right: 11em;
+}
+
+.menu-dropdown {
+	margin-left: 2px;
+}
+										/*Nav menu*/
+
+.nav-menu {	
+	display: flex;
+	list-style-type: none;
+}
+
+.menu-item a{
+	text-decoration: none;
+	color: #72EE53;
+	font-family: Gill Sans MT;
+	font-size: 1em;
+	margin-right: 10em;
+	margin-left: 1em;
+	border: 1px solid #424242;
+	border-radius: 17px;
+	background-color: #424242;
+	padding: .5em;
+
+}
+
+										/*Animation_nav menu*/
+@keyframes changeColorNav {
+	from {
+		color: #72EE53;
+		background-color: #424242;
+	}
+	to {
+		color: #424242;
+		background-color: #72EE53;
+	}
+}
+
+.menu-item a:hover {
+	animation-name: changeColorNav;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+}
+
+
+a:active {
+	text-decoration: underline;
+}
+
+a:link {
+	color: #72EE53;
+}
+										/*Log in*/
+#login a {
+	border: 1em solid #333333;
+	text-decoration: underline;
+	font-family: Gill Sans MT;
+	color: #fff;
+	margin-left: 9em;
+}
+
+@keyframes login {
+	from {
+		color: #fff;
+	}
+	to {
+		color: #72EE53
+	}
+}
+
+#login > a:hover {
+	animation-name: login;
+	animation-duration: .6s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+}
+
+
+#login > a:active {
+	color: #fff;
+}
+
+hr {
+	border-color: #72EE53;
+}
+										/*Search*/
+.search {
+	margin-top: 10%;
+	margin-left: 31%;
+}
+
+input:focus {
+	outline:none;
+}
+
+input {
+	width: 50%;
+	height: 3em;
+	color: #fff;
+	display: flex;
+	padding-left: 1em;
+	border-radius: 15em;
+	background-color: #424242;
+	border: 1px solid #333333;
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+
+h1 {
+	margin-top: 9%;
+	margin-left: 36%;
+	font-family: Gill Sans MT;
+	color: #fff;
+	word-spacing: .2em;
+	letter-spacing: .09em;
+
+}
+
+
+										/*Series*/
+
+.series li{
+	display: inline-flex;
+	margin-top: 5em;
+
+}
+
+.series li > a{
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: 1em;
+  
+}
+#s1 {
+	background-image: url("./Images/Boys.png");
+	width: 10em;
+	height: 5em;
+	border-radius: 1em;
+}
+
+#s2 {
+	background-image: url("./Images/Breaking.jpg");
+	width: 10em;
+	height: 5em;
+	border-radius: 1em;
+}
+
+#s3 {
+	background-image: url("./Images/Jojo.jpg");
+	width: 10em;
+	height: 5em;
+	border-radius: 1em;
+}
+
+#s4 {
+	background-image: url("./Images/Miami.jpg");
+	width: 10em;
+	height: 5em;
+	border-radius: 1em;
+}
+
+#s5 {
+	background-image: url("./Images/Twix.jpg");
+	width: 10em;
+	height: 5em;
+	border-radius: 1em;
+}
+
+#s6 {
+	background-image: url("./Images/Saul.jpg");
+	width: 10em;
+	height: 5em;
+	border-radius: 1em;
+}
+
+#s7 {
+	background-image: url("./Images/Mirror.jpg");
+	width: 10em;
+	height: 5em;
+	border-radius: 1em;
+}
+
+
+
+										/*Animation*/
+
+@keyframes top {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: .5;
+	}
+}
+
+.series li > a:hover{
+	animation-name: top;
+	animation-duration: 0.9s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes go1 {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.series li > a{
+	animation-name: go1;
+	animation-duration: 5s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+}
+										/*Films*/
+
+.films li{
+	display: inline-flex;
+	margin-top: 5em;
+
+}
+
+.films li > a{
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: 2em;
+
+}
+#f1 {
+	background-image: url("./Images/Snatch.jpg");
+	width: 10em;
+	height: 5em;
+	border-radius: 1em;
+}
+
+#f2 {
+	background-image: url("./Images/Bullet.jpg");
+	width: 10em;
+	height: 5em;
+	border-radius: 1em;
+}
+
+#f3 {
+	background-image: url("./Images/Fiction.jpg");
+	width: 10em;
+	height: 5em;
+	border-radius: 1em;
+}
+
+#f4 {
+	background-image: url("./Images/Wolf.jpg");
+	width: 10em;
+	height: 5em;
+	border-radius: 1em;
+}
+
+#f5 {
+	background-image: url("./Images/Inception.jpg");
+	width: 10em;
+	height: 5em;
+	border-radius: 1em;
+}
+
+#f6 {
+	background-image: url("./Images/Head.jpg");
+	width: 10em;
+	height: 5em;
+	border-radius: 1em;
+}
+
+#f7 {
+	background-image: url("./Images/Godfather.jpg");
+	width: 10em;
+	height: 5em;
+	border-radius: 1em;
+}
+
+
+
+										/*Animation*/
+
+.films li > a:hover{
+	animation-name: top;
+	animation-duration: 0.7s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+}
+
+.films li > a{
+	animation-name: go1;
+	animation-duration: 5s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+}
