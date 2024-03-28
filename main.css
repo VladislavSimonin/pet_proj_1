@@ -206,7 +206,7 @@ h1 {
 
 
 
-										/*Animation*/
+										/*Animation_series_opacity*/
 
 @keyframes top {
 	from {
@@ -227,23 +227,6 @@ h1 {
 }
 
 
-@keyframes go1 {
-	0% {
-		transform: translateX(100%);
-	}
-	100% {
-		transform: translateX(-100%);
-	}
-}
-
-.series li > a{
-	animation-name: go1;
-	animation-duration: 5s;
-	animation-timing-function: ease;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-	animation-fill-mode: forwards;
-}
 										/*Films*/
 
 .films li{
@@ -309,7 +292,8 @@ h1 {
 
 
 
-										/*Animation*/
+										/*Animation_films_opacity*/
+
 
 .films li > a:hover{
 	animation-name: top;
@@ -317,14 +301,5 @@ h1 {
 	animation-timing-function: ease;
 	animation-iteration-count: 1;
 	animation-direction: normal;
-	animation-fill-mode: forwards;
-}
-
-.films li > a{
-	animation-name: go1;
-	animation-duration: 5s;
-	animation-timing-function: ease;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
 	animation-fill-mode: forwards;
 }
